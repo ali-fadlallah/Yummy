@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Yummy</title>
+
+  <link rel="icon" href="images/logo.png">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/all.min.css">
+  <link rel="stylesheet" href="css/animate.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <aside>
+    <div id="sideBar" class="d-flex">
+
+      <div class="sideBarMenu container">
+
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 text-white">
+
+          <li class="nav-item">
+            <a class="nav-link itemSearch">Search</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link itemCate">Categories</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link itemArea">Area</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link itemIng">Ingredients</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link itemCont">Contact Us</a>
+          </li>
+
+        </ul>
+
+        <div class="nav-social-item text-muted">
+          <a><i class="fa-brands fa-facebook-f me-2"></i></a>
+          <a><i class="fa-brands fa-twitter me-2"></i></a>
+          <a><i class="fa-solid fa-globe"></i></a>
+          <div class="pt-3">
+            <span>Copyright © 2022 All Rights Reserved.</span>
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="sideBarIcons container py-3">
+
+        <div>
+
+          <img src="images/logo.png" alt="">
+
+        </div>
+
+        <div class="sideBarMenuIcon p-3">
+
+          <i class="fa-solid fa-bars text-center fa-2x"></i>
+
+        </div>
+
+        <div class="sideBarSocial p-3">
+
+          <i class="fa-solid fa-globe d-block mb-3"></i>
+          <i class="fa-solid fa-share-nodes d-block"></i>
+        </div>
+
+      </div>
+
+    </div>
+  </aside>
+
+  <div id="loadingScreen">
+    <span class="loader"></span>
+  </div>
+
+  <section id="mealHome" class="p-5">
+    <div class="container">
+
+      <div class="container py-3">
+
+        <div id="searchInputs" class="d-none">
+
+
+          <div class="row w-75 m-auto mb-4">
+            <div class="col-md-6">
+              <div class="mb-3">
+                <input id="searchByName" type="text" class="form-control text-center" placeholder="Search By Name ....">
+              </div>
+
+            </div>
+
+            <div class="col-md-6">
+              <div class="mb-3">
+                <input id="searchByFirstChar" type="text" class=" text-center form-control"
+                  placeholder="Search By First Character ....">
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+
+        <div id="homeMealRow" class=" px-5 row g-4">
+
+
+        </div>
+      </div>
+  </section>
+
+  <section id="mealDetails" class="d-none">
+    <div class=" container p-5 text-white">
+
+      <div class="row p-5" id="rowMealDetails">
+
+        <div class="col-md-4">
+          <div class=" text-center text-white">
+            <img id="strMealThumb" class="w-100 rounded mb-2 wow slideInLeft" data-wow-duration="2s"
+              data-wow-delay="0.5s" alt="Meal Thumb">
+            <h3 id="strMeal"></h3>
+          </div>
+        </div>
+
+        <div class=" col-md-8">
+          <div>
+            <h3>Instructions</h3>
+            <p class="wow slideInRight" id="strInstructions" data-wow-duration="2s" data-wow-delay="0.5s"></p>
+            <h5 class="py-2">Area: <span id="strArea" class="fs-6"></span></h5>
+            <h5 class="py-2">Category: <span id="strCategory" class="fs-6"></span></h5>
+            <h5 class="py-2">Recipes:</h5>
+            <h5 class="wow bounce" data-wow-duration="2s" data-wow-delay="1.5s" id="Recipes"></h5>
+            <h5 class="py-2" id="tagsTitle">Tags:</h5>
+            <h5 id="Tags"></h5>
+            <div class="py-1 ms-2">
+
+              <button id="btnSource" type="button" class="btn btn-success me-2">Source</button>
+              <button id="btnYoutube" type="button" class="btn btn-danger">Youtube</button>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/jquery-3.6.1.min.js"></script>
+  <script src="js/wow.min.js"></script>
+  <script src="js/index.js"></script>
+</body>
+
+</html>
