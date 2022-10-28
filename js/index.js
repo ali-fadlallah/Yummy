@@ -274,7 +274,7 @@ function displayTheCategories(allMeals) {
     let temp = "";
     allMeals.forEach((element) => {
         temp += `
-            <div class=" col-md-3 wow bounceInDown" data-wow-duration="2s" data-wow-delay="0.5s" >
+            <div class=" col-md-3 wow " data-wow-duration="2s" data-wow-delay="0.5s" >
             <div onclick="filterByCategory('${"c"}','${element.strCategory
             }')" class="itemMeal" >
               <img src="${element.strCategoryThumb
