@@ -455,14 +455,14 @@ function displayContactUs() {
 
     <div class="col-md-6">
         <div class="mb-3">
-             <input id="txtEmail" onkeyup=checkAllInputs() type="email" class="form-control text-center" placeholder="Enter your email address">
+             <input id="txtEmail" onkeyup=checkAllInputs() type="email" class="form-control text-center" placeholder="Enter your email">
              <div id="alertEmail" class="text-center mt-1 py-2 alert alert-danger d-none">Invalid email address</div>
          </div>
     </div>
 
     <div class="col-md-6">
     <div class="mb-3">
-       <input id="txtMobile" onkeyup=checkAllInputs() type="number" class="form-control text-center" placeholder="Enter your mobile number">
+       <input id="txtMobile" onkeyup=checkAllInputs() type="number" class="form-control text-center" placeholder="Enter your mobile">
        <div id="alertNumber" class="text-center mt-1 py-2 alert alert-danger d-none">Invalid Mobile Number >> hint: it's must be a egyption number</div>
 
     </div>
@@ -487,7 +487,7 @@ function displayContactUs() {
 
 <div class="col-md-6">
 <div class="mb-3">
-    <input id="txtRePassword" type="password" onkeyup=checkAllInputs() class="form-control text-center" placeholder="Confirm your password">
+    <input id="txtRePassword" type="password" onkeyup=checkAllInputs() class="form-control text-center" placeholder="Confirm the password">
     <div id="alertRePassword" class="text-center mt-1 py-2 alert alert-danger d-none">the password confirmation does not match</div>
 
 </div>
