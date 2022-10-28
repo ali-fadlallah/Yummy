@@ -273,17 +273,18 @@ async function fetchCategory() {
 function displayTheCategories(allMeals) {
     let temp = "";
     allMeals.forEach((element) => {
+
         temp += `
-            <div class=" col-md-3 wow " data-wow-duration="2s" data-wow-delay="0.5s" >
+            <div class=" col-md-3 wow bounceInDown" data-wow-duration="2s" data-wow-delay="0.5s" >
             <div onclick="filterByCategory('${"c"}','${element.strCategory
             }')" class="itemMeal" >
               <img src="${element.strCategoryThumb
             }" class=" w-100 rounded" alt="Category Thumb">
-              <div class="innerBox d-flex justify-content-center align-items-center flex-column rounded p-2">
-                <h2 class="py-1">${element.strCategory}</h2>
+              <div class="innerBox d-flex justify-content-center align-items-center flex-column rounded">
+                <h4 class="py-1">${element.strCategory}</h4>
                 <p>${element.strCategoryDescription
                 .split(" ")
-                .splice(0, 20)
+                .splice(0, 5)
                 .join(" ")}
                 <a class="">Read More</a>
                 </p>
@@ -296,6 +297,7 @@ function displayTheCategories(allMeals) {
     mealRow.innerHTML = temp;
 
     mealRow.classList.add("justify-content-center");
+
 }
 
 async function filterByCategory(paramter, Category) {
