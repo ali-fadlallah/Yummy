@@ -493,7 +493,7 @@ function displayContactUs() {
 </div>
 </div>
 
-    <button id="btnSubmit" disabled type="button" class="btn btn-outline-danger w-25">Submit</button>
+    <button id="btnSubmit" disabled type="button" class="btn btn-outline-danger w-50">Submit</button>
 
   `;
 
